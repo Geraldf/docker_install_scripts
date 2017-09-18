@@ -6,5 +6,6 @@ docker run --detach \
     --env MYSQL_USER=$(id -un) \
     --env MYSQL_PASSWORD=Lennart21 \
     --restart always \
+    -p 3306:33306  \
     -d \
     mariadb:latest
